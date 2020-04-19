@@ -1,0 +1,20 @@
+<%- include('./partials/header')%>
+
+<form action="/users/register" method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control input-form" id="exampleInputEmail1" placeholder="Email" name="user[email]">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputUsername">Username</label>
+    <input type="text" class="form-control input-form" id="exampleInputUsername" placeholder="Username" name="user[username]">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control input-form" id="exampleInputPassword1" placeholder="Password" name="user[password]">
+  </div>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<%- include('./partials/footer')%>
